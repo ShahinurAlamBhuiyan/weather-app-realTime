@@ -57,7 +57,9 @@ const getIp = async () => {
     const res = await fetch(`http://ip-api.com/json/?fields=61439`)
     const data = await res.json()
     const currentCity = data.city;
-    console.log(currentCity)
     getAPI(currentCity)
+    return data;
+    console.log(currentCity)
+    
 }
 getIp();
