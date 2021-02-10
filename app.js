@@ -54,7 +54,7 @@ const displayError = error => {
 
 // GET USER IP AND SHOW USER CURRENT WEATHER...
 const getIp = async () => {
-    const res = await fetch(`http://ip-api.com/json/`)
+    const res = await fetch(`http://ip-api.com/json/?fields=61439`)
     const data = await res.json()
     const currentCity = data.city;
     console.log(currentCity)
