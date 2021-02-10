@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font style link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="findLocation" type="text" class="form-control" placeholder="To change your location...">
+                <div class="input-group-append">
+                    <button onclick="searchLocation()" id="searchBtn" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+
+            <!-- To show error message -->
+            <h3 id="errorText" style="color: rgb(219, 12, 12);">
+                </h5>
+        </form>
+
+        <!-- Main content container div -->
+        <div id="weatherInformation" class="weather-status text-white text-center">
+
+        </div>
+    </div>
+
+    <!-- javascript file link attached -->
+    <script src="app.js"></script>
+</body>
+
+</html>
