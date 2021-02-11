@@ -54,12 +54,10 @@ const displayError = error => {
 
 // GET USER IP AND SHOW USER CURRENT WEATHER...
 const getIp = async () => {
-    const res = await fetch(`http://ip-api.com/json/?fields=61439`)
+    const res = await fetch(`https://extreme-ip-lookup.com/json/`)
     const data = await res.json()
     const currentCity = data.city;
     getAPI(currentCity)
-    return data;
-    console.log(currentCity)
-    
 }
+
 getIp();
